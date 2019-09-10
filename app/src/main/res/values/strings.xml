@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="botao1">Games</string>
+    <string name="texto1">Escrito e dirigido por Joss Whedon, Os Vingadores – The Avengers é um filme de super-herói estadunidense produzido pela Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures.</string>
+    <string name="value35">R$ 35.00</string>
+    <string name="value10">R$ 10.00</string>
+    <string name="value23">R$ 23.00</string>
+    <string name="valor_total">VALOR TOTAL:</string>
+    <string name="soma">R$ 0.00</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="msgFinal">Valor calculado e finalizado com sucesso!</string>
+</resources>

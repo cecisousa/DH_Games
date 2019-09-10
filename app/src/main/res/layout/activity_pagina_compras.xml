@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaginaComprasActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/texto1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <RelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/bgCinza"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.071">
+
+        <ImageView
+            android:id="@+id/revista1"
+            android:layout_width="93dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/clean" />
+
+        <TextView
+            android:id="@+id/preco1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value35"
+            android:textSize="12sp"
+            android:layout_below="@id/revista1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            />
+
+        <ImageView
+            android:id="@+id/revista2"
+            android:layout_width="93dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/capa2"
+            android:layout_toRightOf="@id/revista1"/>
+
+        <TextView
+            android:id="@+id/preco2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/value10"
+            android:layout_below="@id/revista2"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_toRightOf="@id/preco1"/>
+
+        <ImageView
+            android:id="@+id/revista3"
+            android:layout_width="93dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/capa3"
+            android:layout_toRightOf="@id/revista2"/>
+
+        <TextView
+            android:id="@+id/preco3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/revista3"
+            android:text="@string/value23"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@id/preco2"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/valor_total"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/soma"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorBtn2"
+        android:text="@string/finalizar"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.697" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
